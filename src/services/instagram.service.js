@@ -43,15 +43,7 @@ class InstagramService {
       code
     });
 
-    const { data } = await axios.post(
-      config.urls.accessToken, 
-      params.toString(), 
-      {
-        headers: { 
-          'Content-Type': 'application/x-www-form-urlencoded' 
-        }
-      }
-    );
+    const { data } = await axios.post(config.urls.accessToken, params);
     return data.access_token;
   }
 
