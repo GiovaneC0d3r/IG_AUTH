@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Instagram Business</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fafafa;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border: 1px solid #dbdbdb;
+        }
+        h1 {
+            color: #262626;
+            margin-bottom: 24px;
+            font-size: 24px;
+        }
+        .btn-instagram {
+            display: inline-block;
+            background-color: #0095f6;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: background-color 0.2s;
+        }
+        .btn-instagram:hover {
+            background-color: #0081d6;
+        }
+        p {
+            color: #8e8e8e;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Integração Instagram</h1>
+        <a href="/api/auth/initiate" class="btn-instagram">
+            Logar com Instagram Business
+        </a>
+        <p>A extração do IGA ID e Token será processada no servidor.</p>
+    </div>
+</body>
+</html>
