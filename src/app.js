@@ -19,7 +19,7 @@ app.use(helmet());
 app.use(cookieParser(config.instagram.sessionSecret));
 app.use(express.static(path.join(__dirname, '../public')));
 
-
+app.set('trust proxy', 1);
 app.use('/api/auth', authRoutes);
 
 
